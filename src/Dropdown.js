@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import './styles/Dropdown.css'
-import downArrow from './assets/down-arrow.png'
 
 const Dropdown = ({
                       selectValue,

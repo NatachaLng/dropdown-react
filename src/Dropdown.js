@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronUp} from '@fortawesome/free-solid-svg-icons'
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 import './styles/Dropdown.css'
 
@@ -32,8 +35,8 @@ const Dropdown = ({
                 aria-labelledby={activeDescendant}
                 aria-haspopup={true}
             >
-        <span className="dropdown-btn">{selectValue.text}</span>
-                <span className="dropdown-arrow"></span>
+        <span className="dropdown-btn" >{selectValue.text} {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown'/> :
+            <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown'/>}</span>
       </span>
             <div className={isOpen ? "dropdown-options active" : "dropdown-options"}>
                 <ul className="dropdown-list" id={`${selectName}-menu`}>

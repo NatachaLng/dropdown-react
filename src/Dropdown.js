@@ -33,6 +33,7 @@ const Dropdown = ({
                 aria-haspopup={true}
             >
         <span className="dropdown-btn">{selectValue.text}</span>
+                <span className="dropdown-arrow"></span>
       </span>
             <div className={isOpen ? "dropdown-options active" : "dropdown-options"}>
                 <ul className="dropdown-list" id={`${selectName}-menu`}>

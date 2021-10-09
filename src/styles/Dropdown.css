@@ -1,5 +1,5 @@
 :root {
-    --fleche: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='16.000000pt' height='16.000000pt' viewBox='0 0 16.000000 16.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,16.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3E%3Cpath d='M43 83 l37 -38 37 38 38 37 -75 0 -75 0 38 -37z'/%3E%3C/g%3E%3C/svg%3E");
+    --fleche: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='16.000000pt' height='16.000000pt' viewBox='0 0 16.000000 16.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,16.000000) scale(0.100000,-0.100000)' fill='%235b6f0c' stroke='none'%3E%3Cpath d='M43 83 l37 -38 37 38 38 37 -75 0 -75 0 38 -37z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .dropdown {
     display: flex;
@@ -11,7 +11,7 @@
     padding: 5px 10px;
 }
 
-.dropdown-btn::after{
+.dropdown-arrow::after{
     content: " ";
     background-image: var(--fleche);
     display: block;

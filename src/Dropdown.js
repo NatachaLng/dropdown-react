@@ -27,7 +27,6 @@ const Dropdown = ({
                 className="dropdown"
                 id={`${selectName}-btn`}
                 tabIndex="0"
-                role="combobox"
                 aria-expanded={isOpen}
                 aria-controls={`${selectName}-menu`}
                 aria-activedescendant={activeDescendant}

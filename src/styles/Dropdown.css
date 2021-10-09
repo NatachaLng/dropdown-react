@@ -11,13 +11,11 @@
     padding: 5px 10px;
 }
 
-.dropdown-arrow::after{
+.dropdown-arrow::before{
     content: " ";
     background-image: var(--fleche);
     display: block;
-    width: 22px;
-    height: 10px;
-    margin: 10px 5px 0 10px;
+    width: 15px;
 }
 
 .dropdown:hover {

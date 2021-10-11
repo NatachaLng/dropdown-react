@@ -1,12 +1,12 @@
-# dropdown-react
+# [dropdown-react](https://www.npmjs.com/package/dropdown-react-natacha)
 
 Simple customizable modal component for React apps.
 
-# Installation
+## Installation
 
 To install using npm: [npm install dropdown-react-natacha]
 
-# API Documentation
+## API Documentation
 
 This is a simple example of dropdown being used in a React app.
 

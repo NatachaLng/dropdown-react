@@ -5,6 +5,18 @@ import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 import './styles/Dropdown.css'
 
+/**
+ *
+ * @param selectValue - Default value
+ * @param handleSelectChange - Handle change
+ * @param selectLabel - Label name
+ * @param selectList - List to display in the dropdown
+ * @param selectName - Name
+ * @param isOpen - Check if the dropdown is opened
+ * @param handleOpen - Function to open 
+ * @return {JSX.Element}
+ * @constructor
+ */
 const Dropdown = ({
                       selectValue,
                       handleSelectChange,

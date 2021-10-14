@@ -13,7 +13,7 @@ import './styles/Dropdown.css'
  * @param selectList - List to display in the dropdown
  * @param selectName - Name
  * @param isOpen - Check if the dropdown is opened
- * @param handleOpen - Function to open 
+ * @param handleOpen - Function to open
  * @return {JSX.Element}
  * @constructor
  */
@@ -45,8 +45,8 @@ const Dropdown = ({
                 aria-labelledby={activeDescendant}
                 aria-haspopup={true}
             >
-        <span className="dropdown-btn" onClick={() => handleOpen(selectName)}>{selectValue.text} {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown'/> :
-            <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown'/>}</span>
+        <span className="dropdown-btn" onClick={() => handleOpen(selectName)}>{selectValue.text} {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown' onClick={() => handleOpen(selectName)}/> :
+            <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown' onClick={() => handleOpen(selectName)}/>}</span>
       </span>
             <div className={isOpen ? "dropdown-options active" : "dropdown-options"}>
                 <ul className="dropdown-list" id={`${selectName}-menu`}>

@@ -45,7 +45,7 @@ const Dropdown = ({
                 aria-labelledby={activeDescendant}
                 aria-haspopup={true}
             >
-        <span className="dropdown-btn" data-selectName={selectName} onClick={() => handleOpen()}>{selectValue.text} {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown'/> :
+        <span className="dropdown-btn" onClick={() => handleOpen({selectName})}>{selectValue.text} {isOpen ? <FontAwesomeIcon icon={faChevronUp} className='arrow_dropdown'/> :
             <FontAwesomeIcon icon={faChevronDown} className='arrow_dropdown'/>}</span>
       </span>
             <div className={isOpen ? "dropdown-options active" : "dropdown-options"}>

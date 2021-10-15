@@ -50,7 +50,7 @@ Example:
 If you want to close the dropdown on clicking anywhere else on your window, you can add this kind of function to your project:
  ````
  window.onclick = function(event) {
-        if (!event.target.matches('.dropdown-btn')) {
+        if (!event.target.closest('.dropdown-btn')) {
             setOpenElts(initialState);
             setIsOverlayActive(false);
         }}}
